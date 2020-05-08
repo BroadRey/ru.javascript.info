@@ -246,6 +246,8 @@ let sayHi = function(name) {  // (*) магии больше нет
 Такой код, использующий Function Declaration, работать не будет:
 
 ```js run
+"use strict";
+
 let age = prompt("Сколько Вам лет?", 18);
 
 // в зависимости от условия объявляем функцию
@@ -274,6 +276,8 @@ welcome(); // Error: welcome is not defined
 Вот ещё один пример:
 
 ```js run
+"use strict";
+
 let age = 16; // присвоим для примера 16
 
 if (age < 18) {
